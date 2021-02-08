@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,7 +43,6 @@
             
                 <br>
 
-                
                 <label> <input type="radio" name="devweb" value="frontend" checked>Front-end </label>
                 
                 <label> <input type="radio" name="devweb" value="backend">Back-end </label>
@@ -58,7 +56,7 @@
 
 
         <fieldset class="grupo">
-            <div>
+            <div id="campo">
             <label>Senioridade</label>
             <select id="senioridade">
                 <option selected disable value="">Selecione</option> <!-- Serve para deixar a lista suspensa não marcada-->
@@ -72,7 +70,7 @@
         <br>
 
         <fieldset class="grupo">
-            <div>
+            <div id="campo">
                 <label>Selecione as tecnologias que você utiliza:</label>
             </div>
 
@@ -113,6 +111,21 @@
                 <label for="tecnologia7">Java</label>
             </div>
 
+            <div id="campo">
+                <input type="checkbox" id="tecnologia8" name="tecnologia8" value="NodeJS">
+                <label for="tecnologia8">Node.Js</label>
+            </div>
+
+            <div id="campo">
+                <input type="checkbox" id="tecnologia9" name="tecnologia9" value="c++">
+                <label for="tecnologia9">C++</label>
+            </div>
+
+            <div id="campo">
+                <input type="checkbox" id="tecnologia10" name="tecnologia10" value="Ruby">
+                <label for="tecnologia10">Ruby</label>
+            </div>
+
         </fieldset>
 
         <br>
@@ -127,6 +140,5 @@
         <button type="submit" class="botao">Concluir cadastro</button>
 
     </form>
-
 </body>
 </html>
