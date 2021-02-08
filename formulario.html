@@ -11,57 +11,54 @@
     <div> <!-- Dividir em blocos -->
         <h1 id="titulo"> Cadastro de Developers</h1> <!--Cabeçalho-->
         <p id="subtitulo">Complete todas as informações possíveis</p> <!--Parágrafo-->
-        <p id="plus"> (*) é obrigatório</p>
-        <br>
     </div>
 
     <form> <!-- Formulário -->
         <fieldset class="grupo"> <!-- "fieldset" serve para separar um campo -->
             <div class="campo">
-                <label for="nome">Nome*</label> <!-- "Label" é a explicação do campo -->
-                <input type="text" name="Nome" id="nome" required> <!-- "input" recebe dados do cliente -->
+                <label for="nome">Nome</label> <!-- "Label" é a explicação do campo -->
+                <input type="text" name="nome" id="nome" required> <!-- "input" recebe dados do cliente -->
             </div>
             
             <div class="campo">
-            <label for="sobrenome"> Sobrenome*</label> <!-- Explicação do campo-->
+            <label for="sobrenome"> Sobrenome</label> <!-- Explicação do campo-->
             <input type="text" name="sobrenome" id="sobrenome" required> <!-- Recebe dados do cliente -->
             </div>
+        </fieldset>
         
-        
+
+        <fieldset class="grupo">
             <div  class="campo">
-            <label> E-mail* </label>
+            <label> E-mail</label>
             <input type="email" name="E-mail" id="email" required> 
             </div>
 
             <div  class="campo">
-            <label>Confirme seu E-mail* </label>
+            <label>Confirme seu E-mail</label>
             <input type="email" name="E-mail" id="email" required> 
             </div>
         </fieldset>
 
         <fieldset class="grupo">
-        <div class="campo">
-            <label> Qual ramo aplicação você desenvolve?</label>
-        </div>
+            <div id="campo"> <label> Qual ramo aplicação você desenvolve?</label> </div>   
+            
+                <br>
+
+                
+                <label> <input type="radio" name="devweb" value="frontend" checked>Front-end </label>
+                
+                <label> <input type="radio" name="devweb" value="backend">Back-end </label>
+                
+                <label> <input type="radio" name="devweb" value="fullstack">Fullstack </label>
+                
+            
+        </fieldset>
 
         <br>
 
-        <div class="campo">
-            <input type="checkbox" id="frontend" name="devweb" value="frontend"> <!-- "Checkbox" serve para colocar um quadradinho para o cliente selecionar -->
-            <label for="frontend">Front-end</label>
-        </div>
-        <div class="campo">
-            <input type="checkbox" id="backend" name="devweb" value="backend"> 
-            <label for="backend">Back-end</label>
-        </div>
-        <div class="campo">
-            <input type="checkbox" id="fullstack" name="devweb" value="fullstack"> 
-            <label for="fullstack">Full-Stack</label>
-        </div>
-       
-        <br>
 
-        <div>
+        <fieldset class="grupo">
+            <div>
             <label>Senioridade</label>
             <select id="senioridade">
                 <option selected disable value="">Selecione</option> <!-- Serve para deixar a lista suspensa não marcada-->
@@ -69,8 +66,10 @@
                 <option>Pleno</option>
                 <option>Sênior</option>
             </select>
-        </div>
+            </div>
         </fieldset>
+
+        <br>
 
         <fieldset class="grupo">
             <div>
@@ -79,42 +78,44 @@
 
             <br>
 
-            <div id="check">
-                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML"> 
+            <div id="campo">
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML"> <!-- "Checkbox" serve para colocar um quadradinho para o cliente selecionar -->
                 <label for="tecnologia1">HTML</label>
             </div>
 
-            <div id="check">
+            <div id="campo">
                 <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
                 <label for="tecnologia2">CSS</label>
             </div>
 
-            <div id="check">
+            <div id="campo">
                 <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Javascript">
                 <label for="tecnologia3">Javascript</label>
             </div>
 
-            <div id="check">
+            <div id="campo">
                 <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
                 <label for="tecnologia4">PHP</label>
             </div>
 
-            <div id="check">
+            <div id="campo">
                 <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
                 <label for="tecnologia5">C#</label>
             </div>
 
-            <div id="check">
+            <div id="campo">
                 <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
                 <label for="tecnologia6">Python</label>
             </div>
 
-            <div id="check">
+            <div id="campo">
                 <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
                 <label for="tecnologia7">Java</label>
             </div>
 
         </fieldset>
+
+        <br>
 
         <fieldset class="campo">
             <div>
