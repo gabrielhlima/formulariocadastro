@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type = "text/css" href="formulario.css" media="screen">
+    <title>Cadastro DEV</title>
+</head>
+<body>
+    <div> <!-- Dividir em blocos -->
+        <h1 id="titulo"> Cadastro de Developers</h1> <!--Cabeçalho-->
+        <p id="subtitulo">Complete todas as informações possíveis</p> <!--Parágrafo-->
+        <p id="plus"> (*) é obrigatório</p>
+        <br>
+    </div>
+
+    <form> <!-- Formulário -->
+        <fieldset class="grupo"> <!-- "fieldset" serve para separar um campo -->
+            <div class="campo">
+                <label for="nome">Nome*</label> <!-- "Label" é a explicação do campo -->
+                <input type="text" name="Nome" id="nome" required> <!-- "input" recebe dados do cliente -->
+            </div>
+            
+            <div class="campo">
+            <label for="sobrenome"> Sobrenome*</label> <!-- Explicação do campo-->
+            <input type="text" name="sobrenome" id="sobrenome" required> <!-- Recebe dados do cliente -->
+            </div>
+        
+        
+            <div  class="campo">
+            <label> E-mail* </label>
+            <input type="email" name="E-mail" id="email" required> 
+            </div>
+
+            <div  class="campo">
+            <label>Confirme seu E-mail* </label>
+            <input type="email" name="E-mail" id="email" required> 
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+        <div class="campo">
+            <label> Qual ramo aplicação você desenvolve?</label>
+        </div>
+
+        <br>
+
+        <div class="campo">
+            <input type="checkbox" id="frontend" name="devweb" value="frontend"> <!-- "Checkbox" serve para colocar um quadradinho para o cliente selecionar -->
+            <label for="frontend">Front-end</label>
+        </div>
+        <div class="campo">
+            <input type="checkbox" id="backend" name="devweb" value="backend"> 
+            <label for="backend">Back-end</label>
+        </div>
+        <div class="campo">
+            <input type="checkbox" id="fullstack" name="devweb" value="fullstack"> 
+            <label for="fullstack">Full-Stack</label>
+        </div>
+       
+        <br>
+
+        <div>
+            <label>Senioridade</label>
+            <select id="senioridade">
+                <option selected disable value="">Selecione</option> <!-- Serve para deixar a lista suspensa não marcada-->
+                <option>Júnior</option>
+                <option>Pleno</option>
+                <option>Sênior</option>
+            </select>
+        </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <div>
+                <label>Selecione as tecnologias que você utiliza:</label>
+            </div>
+
+            <br>
+
+            <div id="check">
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML"> 
+                <label for="tecnologia1">HTML</label>
+            </div>
+
+            <div id="check">
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                <label for="tecnologia2">CSS</label>
+            </div>
+
+            <div id="check">
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Javascript">
+                <label for="tecnologia3">Javascript</label>
+            </div>
+
+            <div id="check">
+                <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+                <label for="tecnologia4">PHP</label>
+            </div>
+
+            <div id="check">
+                <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+                <label for="tecnologia5">C#</label>
+            </div>
+
+            <div id="check">
+                <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+                <label for="tecnologia6">Python</label>
+            </div>
+
+            <div id="check">
+                <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
+                <label for="tecnologia7">Java</label>
+            </div>
+
+        </fieldset>
+
+        <fieldset class="campo">
+            <div>
+                <label>Conte um pouco sobre você e sua experiência na programação:</label>
+                <textarea rows="10" style="width: 30em" id="experiencia" name="experiencia"></textarea>
+            </div>
+        </fieldset>
+        
+        <button type="submit" class="botao">Concluir cadastro</button>
+
+    </form>
+
+</body>
+</html>
