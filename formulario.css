@@ -6,7 +6,7 @@
 #titulo{
     font-family: sans-serif;
     color: #380B61;
-    margin: 5%;
+    margin: 1%;
 }
 
 #subtitulo{
@@ -25,8 +25,8 @@ body{
     font-family: sans-serif;
     font-size: 1em;
     color: #59429d;
-    margin: 36%;
-    margin-top: 1%;
+    margin: 35%;
+    margin-top: 3%;
     justify-content: center ;
 }
 
@@ -69,15 +69,15 @@ fieldset.grupo .campo{
 .botao{
     font-size: 1.2em;
     background: #59429d;
-    border: 0;
-    margin-bottom: 1em;
+    border: 5;
+    margin-bottom: 10em;
     color: #ffffff;
-    padding: 0.2em 0.6em;
+    padding: 0.8em 0.6em;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
     position:relative;
     top: 30%;
-    left: 50%;
+    left: 30%;
     
 }
 
