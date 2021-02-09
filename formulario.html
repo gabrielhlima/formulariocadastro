@@ -16,12 +16,12 @@
         <fieldset class="grupo"> <!-- "fieldset" serve para separar um campo -->
             <div class="campo">
                 <label for="nome">Nome</label> <!-- "Label" é a explicação do campo -->
-                <input type="text" name="nome" id="nome" required> <!-- "input" recebe dados do cliente -->
+                <input type="text" name="nome" id="nome" placeholder = "Insira seu nome" required> <!-- "input" recebe dados do cliente -->
             </div>
             
             <div class="campo">
             <label for="sobrenome"> Sobrenome</label> <!-- Explicação do campo-->
-            <input type="text" name="sobrenome" id="sobrenome" required> <!-- Recebe dados do cliente -->
+            <input type="text" name="sobrenome" id="sobrenome" placeholder = "Insira seu sobrenome" required> <!-- Recebe dados do cliente -->
             </div>
         </fieldset>
         
@@ -29,12 +29,12 @@
         <fieldset class="grupo">
             <div  class="campo">
             <label> E-mail</label>
-            <input type="email" name="E-mail" id="email" required> 
+            <input type="email" name="E-mail" id="email" placeholder = "Insira seu E-mail" required> 
             </div>
 
             <div  class="campo">
             <label>Confirme seu E-mail</label>
-            <input type="email" name="E-mail" id="email" required> 
+            <input type="email" name="E-mail" id="email" placeholder = "Confirme seu E-mail" required> 
             </div>
         </fieldset>
 
@@ -44,8 +44,12 @@
                 <br>
 
                 <label> <input type="radio" name="devweb" value="frontend" checked>Front-end </label>
+
+                <br>
                 
                 <label> <input type="radio" name="devweb" value="backend">Back-end </label>
+
+                <br>
                 
                 <label> <input type="radio" name="devweb" value="fullstack">Fullstack </label>
                 
@@ -61,7 +65,9 @@
             <select id="senioridade">
                 <option selected disable value="">Selecione</option> <!-- Serve para deixar a lista suspensa não marcada-->
                 <option>Júnior</option>
+                
                 <option>Pleno</option>
+                
                 <option>Sênior</option>
             </select>
             </div>
@@ -133,7 +139,7 @@
         <fieldset class="campo">
             <div>
                 <label>Conte um pouco sobre você e sua experiência na programação:</label>
-                <textarea rows="10" style="width: 30em" id="experiencia" name="experiencia"></textarea>
+                <textarea rows="8" style="width: 40em" id="experiencia" name="experiencia" placeholder = "Insira sua experiência"></textarea>
             </div>
         </fieldset>
         
